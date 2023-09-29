@@ -9,3 +9,9 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("cngBkg");
   }
 });
+
+const mLetters = document.getElementsByClassName("wordM")[0];
+
+console.log(mLetters.ariaLabel);
+
+mLetters.ariaLabel.forEach(function () {});
