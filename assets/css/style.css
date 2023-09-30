@@ -2,6 +2,16 @@
 
 /* HEADER SECTION */
 
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .container {
   width: 100%;
 }
@@ -698,7 +708,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 380px;
+    height: 467px;
     border-bottom: 2px solid lightgray;
     justify-content: center;
   }
@@ -887,5 +897,11 @@ main {
 
   .contacts ul li {
     margin-right: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    height: 404px;
   }
 }

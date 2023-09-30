@@ -10,8 +10,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const mLetters = document.getElementsByClassName("wordM")[0];
+const mLetters = document.getElementById("wordM");
 
-console.log(mLetters.ariaLabel);
+mLetters.setAttribute("opacity", "1");
 
-mLetters.ariaLabel.forEach(function () {});
+const disapperingLetters = function () {
+  if (labelValue.length > 0) {
+    labelValue = labelValue.slice(0, -1);
+  }
+
+  mLetters.innerText = labelValue;
+};
